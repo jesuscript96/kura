@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERA | YOGUR DE COCO</title>
+    <link rel="stylesheet" href="fera.css">
+    <link rel="icon" type="image/webp" href="img/bacteriashare2.webp">
+    <link rel="stylesheet" href="language-toggle.css">
+</head>
+
+<body class="fera-page">
+    <a href="index.html" class="back-link birdie-font" data-i18n="back-to-lab">← back to lab</a>
+    <div class="product-container">
+        <!-- Columna Izquierda: Galería -->
+        <section class="gallery-col">
+            <div class="gallery-layout single-image-layout">
+                <div class="main-image-container">
+                    <div class="investigation-banner birdie-font">EN INVESTIGACIÓN</div>
+                    <img src="img/Yoguresproducto.png" alt="FERA Yogurt" class="main-product-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Columna Derecha: Panel de Conversión -->
+        <section class="conversion-col">
+            <nav class="breadcrumbs">
+                <span data-i18n="breadcrumbs-start">Inicio / Tienda / </span>
+                <span data-i18n="cat-ferments">Cultivos Fermentados</span>
+            </nav>
+
+            <header class="product-header">
+                <h1 class="birdie-font" data-i18n="fera-title">FERA: YOGUR DE COCO</h1>
+                <p class="birdie-font lab-subtitle" data-i18n="lab-subtitle">Laboratorio Esperanza</p>
+            </header>
+
+
+
+            <p class="description" data-i18n="fera-tagline">
+                Yogur de coco artesanal, fermentado por 48 horas con L. Reuteri. Probiótico vivo, sin lácteos y 100%
+                natural.
+            </p>
+
+            <div class="ingredients-wrap birdie-font">
+                <p class="ingredients-title" data-i18n="ingredients-title">INGREDIENTES</p>
+                <ul class="ingredients-bullets">
+                    <li data-i18n="ing-fera-1">COCO</li>
+                    <li data-i18n="ing-fera-2">AGUA</li>
+                    <li data-i18n="ing-fera-3">INULINA (PREBIÓTICO)</li>
+                    <li data-i18n="ing-fera-4">CULTIVO VIVO L. REUTERI</li>
+                    <li data-i18n="ing-fera-5">TAPIOCA</li>
+                </ul>
+            </div>
+
+            <div class="variants-selection">
+                <h3 class="birdie-font selector-title" data-i18n="select-size">TAMAÑO</h3>
+                <div class="size-info-block birdie-font" data-i18n="fera-size-info">
+                    1 LITRO - $700 MXN
+                </div>
+            </div>
+
+
+
+            <!-- <div class="purchase-actions">
+                <div class="purchase-row">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" id="minus">-</button>
+                        <input type="text" class="quantity-input" value="1" id="qty" readonly>
+                        <button class="quantity-btn" id="plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn birdie-font" id="add-to-cart">
+                        AGREGAR AL CARRITO - $700 MXN
+                    </button>
+                </div>
+            </div> -->
+
+            <!-- Sección Inferior: Beneficios -->
+            <section class="benefits-section birdie-font">
+                <div class="benefit-item">
+                    <span class="benefit-text" data-i18n="fera-benefit-2-short">PROBIÓTICO VIVO</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-text" data-i18n="fera-benefit-1-short">SIN LÁCTEOS / VEGAN</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-text" data-i18n="fera-benefit-6-short">48H FERMENTACIÓN</span>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <!-- Section: The Process - Accordion Layout -->
+    <section class="research-resources" id="fera-process">
+        <div class="research-container">
+            <header class="research-header">
+                <h2 class="birdie-font" data-i18n="fera-process-title">EL PROCESO FERA</h2>
+                <p class="research-subtitle" data-i18n="fera-process-subtitle">Ciencia y paciencia para un alimento
+                    vivo.</p>
+            </header>
+
+            <div class="research-content-grid">
+                <!-- Column 1: Image -->
+                <div class="research-image-col">
+                    <div class="research-image-wrapper">
+                        <img src="img/termometronuevo.JPG" alt="FERA Process" class="research-img">
+                    </div>
+                </div>
+
+                <!-- Column 2: Accordion (Steps) -->
+                <div class="studies-accordion">
+                    <!-- Step 01 -->
+                    <div class="accordion-item">
+                        <button class="accordion-trigger">
+                            <div class="trigger-left">
+                                <span class="study-number birdie-font">01</span>
+                                <span class="study-title birdie-font" data-i18n="fera-step1-title">48 HORAS
+                                    FERMENTACIÓN</span>
+                            </div>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-panel">
+                            <div class="panel-inner">
+                                <p data-i18n="fera-step1-desc">Un proceso lento y controlado que permite que las
+                                    bacterias L. Reuteri se
+                                    multipliquen exponencialmente, logrando una densidad probiótica superior.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 02 -->
+                    <div class="accordion-item">
+                        <button class="accordion-trigger">
+                            <div class="trigger-left">
+                                <span class="study-number birdie-font">02</span>
+                                <span class="study-title birdie-font" data-i18n="fera-step2-title">TEMPERATURA
+                                    CONTROLADA</span>
+                            </div>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-panel">
+                            <div class="panel-inner">
+                                <p data-i18n="fera-step2-desc">Mantenemos una temperatura constante de 37°C (humana)
+                                    para optimizar el crecimiento
+                                    de los cultivos vivos sin dañarlos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 03 -->
+                    <div class="accordion-item">
+                        <button class="accordion-trigger">
+                            <div class="trigger-left">
+                                <span class="study-number birdie-font">03</span>
+                                <span class="study-title birdie-font" data-i18n="fera-step3-title">PRUEBAS DE
+                                    CALIDAD</span>
+                            </div>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-panel">
+                            <div class="panel-inner">
+                                <p data-i18n="fera-step3-desc">Cada lote es revisado para asegurar la textura, pH y
+                                    vitalidad microbiológica antes
+                                    de ser envasado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="translations.js"></script>
+    <script src="language-manager.js"></script>
+
+    <script>
+        const sizeBtns = document.querySelectorAll('.size-btn');
+        const qtyInput = document.getElementById('qty');
+        const plusBtn = document.getElementById('plus');
+        const minusBtn = document.getElementById('minus');
+        const addToCartBtn = document.getElementById('add-to-cart');
+
+        let currentPrice = 700;
+        let currentQty = 1;
+
+        function updateDisplay() {
+            let finalPrice = currentPrice * currentQty;
+            const label = t('add-to-cart');
+            const currency = t('mxn');
+            addToCartBtn.innerText = `${label} - $${Math.round(finalPrice)} ${currency}`;
+        }
+
+        plusBtn.addEventListener('click', () => {
+            currentQty++;
+            qtyInput.value = currentQty;
+            updateDisplay();
+        });
+
+        minusBtn.addEventListener('click', () => {
+            if (currentQty > 1) {
+                currentQty--;
+                qtyInput.value = currentQty;
+                updateDisplay();
+            }
+        });
+
+        // Accordion Logic
+        const accordionTriggers = document.querySelectorAll('.accordion-trigger');
+
+        accordionTriggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const item = trigger.parentNode;
+                const panel = trigger.nextElementSibling;
+                const isActive = item.classList.contains('active');
+
+                // Close all other items
+                document.querySelectorAll('.accordion-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.accordion-panel').style.maxHeight = null;
+                    }
+                });
+
+                // Toggle current item
+                if (isActive) {
+                    item.classList.remove('active');
+                    panel.style.maxHeight = null;
+                } else {
+                    item.classList.add('active');
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        });
+
+        updateDisplay();
+    </script>
+</body>
+
+</html>
