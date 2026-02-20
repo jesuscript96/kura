@@ -88,6 +88,7 @@ const translations = {
         "ing-kura-3": "VINAGRE DE MANZANA",
         "ing-kura-4": "SEMILLAS DE CILANTRO",
         "ing-kura-5": "PIMIENTA NEGRA",
+        "ing-kura-6": "PAPRIKA",
 
         // FERA Ingredients
         "ing-fera-1": "COCO",
@@ -185,6 +186,7 @@ const translations = {
         "ing-kura-3": "APPLE CIDER VINEGAR",
         "ing-kura-4": "CORIANDER SEEDS",
         "ing-kura-5": "BLACK PEPPER",
+        "ing-kura-6": "PAPRIKA",
 
         // FERA Ingredients
         "ing-fera-1": "COCONUT",

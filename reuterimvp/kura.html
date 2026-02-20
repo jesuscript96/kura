@@ -61,21 +61,25 @@
                     <li data-i18n="ing-kura-3">VINAGRE DE MANZANA</li>
                     <li data-i18n="ing-kura-4">SEMILLAS DE CILANTRO</li>
                     <li data-i18n="ing-kura-5">PIMIENTA NEGRA</li>
-                    <li data-i18n="ing-kura-5">PAPRIKA</li>
+                    <li data-i18n="ing-kura-6">PAPRIKA</li>
                 </ul>
             </div>
 
             <div class="variants-selection">
                 <h3 class="birdie-font selector-title" data-i18n="select-size">SELECCIONA TAMAÑO</h3>
                 <div class="size-grid birdie-font">
-                    <button class="size-btn active" data-price="170" data-label="50G">50G - $170 MXN</button>
-                    <button class="size-btn" data-price="329" data-label="100G">100G - $320 MXN</button>
-                    <button class="size-btn" data-price="780" data-label="250G">250G - $780 MXN</button>
-                    <button class="size-btn" data-price="2500" data-label="1KG">1KG - $2500 MXN</button>
+                    <button class="size-btn active" data-price="175" data-label="50G"
+                        data-link="https://buy.stripe.com/6oU3cxakP8W08fnbGl1wY0n">50G - $175 MXN</button>
+                    <button class="size-btn" data-price="320" data-label="100G"
+                        data-link="https://buy.stripe.com/cNibJ350vdcgfHP6m11wY0o">100G - $320 MXN</button>
+                    <button class="size-btn" data-price="779" data-label="50G 5 PACK"
+                        data-link="https://buy.stripe.com/aFabJ3eB5c8c53bh0F1wY0p">50G - 5 PACK - $779 MXN</button>
+                    <button class="size-btn" data-price="1500" data-label="100G 5 PACK"
+                        data-link="https://buy.stripe.com/eVq00l9gL4FKfHPbGl1wY0q">100G - 5 PACK - $1500 MXN</button>
                 </div>
             </div>
 
-            <div class="subscription-selector">
+            <div class="subscription-selector" style="display: none;">
                 <label class="radio-group birdie-font">
                     <input type="radio" name="purchase-type" value="once" checked>
                     <span data-i18n="one-time-purchase">Compra única</span>
@@ -89,7 +93,7 @@
 
             <div class="purchase-actions">
                 <div class="purchase-row">
-                    <div class="quantity-selector">
+                    <div class="quantity-selector" style="display: none;">
                         <button class="quantity-btn" id="minus">-</button>
                         <input type="text" class="quantity-input" value="1" id="qty" readonly>
                         <button class="quantity-btn" id="plus">+</button>
@@ -270,8 +274,9 @@
         const addToCartBtn = document.getElementById('add-to-cart');
         const purchaseType = document.getElementsByName('purchase-type');
 
-        let currentPrice = 170;
+        let currentPrice = 175;
         let currentQty = 1;
+        let currentLink = "https://buy.stripe.com/6oU3cxakP8W08fnbGl1wY0n";
         let isSubscription = false;
 
         function updateDisplay() {
@@ -289,6 +294,7 @@
                 sizeBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 currentPrice = parseInt(btn.dataset.price);
+                currentLink = btn.dataset.link;
                 updateDisplay();
             });
         });
@@ -312,6 +318,12 @@
                 isSubscription = (radio.value === 'subscribe');
                 updateDisplay();
             });
+        });
+
+        addToCartBtn.addEventListener('click', () => {
+            if (currentLink) {
+                window.location.href = currentLink;
+            }
         });
 
         // Accordion Logic

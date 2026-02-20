@@ -282,11 +282,12 @@ body {
     background: var(--accent-kura);
     color: white;
     border: none;
+    height: 60px;
     padding: 0 30px;
     font-size: 20px;
     cursor: pointer;
     transition: opacity 0.2s;
-    border-radius: 50px;
+    border-radius: 12px;
 }
 
 .add-to-cart-btn:hover {
